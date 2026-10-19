@@ -1,4 +1,4 @@
 title: Reyes Golf Course Hearing Timeline
 description: Hour-by-hour timeline of the Oct 19, 2026 hearing in DC Preservation League v. Department of the Interior, compiled from the live posts of Roger Parloff and Molly Roberts (Lawfare).
 theme: jekyll-theme-primer
-exclude: [src, .claude]
+exclude: [src, .claude, worker]

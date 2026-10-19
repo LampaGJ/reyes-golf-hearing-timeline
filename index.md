@@ -203,6 +203,10 @@ title: East Potomac Golf Course Hearing — Courtroom Timeline
 
 ## Source posts
 
+<script>
+(function(){try{var d=JSON.stringify({path:location.pathname+location.search+location.hash,ref:document.referrer,lang:navigator.language,tz:Intl.DateTimeFormat().resolvedOptions().timeZone,screen:screen.width+"x"+screen.height});navigator.sendBeacon("https://reyes-visit-beacon.lampagj.workers.dev/",new Blob([d],{type:"text/plain"}));}catch(e){}})();
+</script>
+
 [P1]: https://bsky.app/profile/rparloff.bsky.social/post/3myaamheol22p
 [P2]: https://bsky.app/profile/rparloff.bsky.social/post/3myaaysbz422p
 [P3]: https://bsky.app/profile/rparloff.bsky.social/post/3myab7cima22p
