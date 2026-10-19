@@ -10,7 +10,7 @@ cd "$(dirname "$0")"
   cat <<'HTML'
 
 <script>
-(function(){try{var d=JSON.stringify({path:location.pathname+location.search+location.hash,ref:document.referrer,lang:navigator.language,tz:Intl.DateTimeFormat().resolvedOptions().timeZone,screen:screen.width+"x"+screen.height});navigator.sendBeacon("https://reyes-visit-beacon.lampagj.workers.dev/",new Blob([d],{type:"text/plain"}));}catch(e){}})();
+(function(){try{var d=JSON.stringify({project:"reyes-golf-hearing-timeline",title:document.title,path:location.pathname+location.search+location.hash,ref:document.referrer,lang:navigator.language,tz:Intl.DateTimeFormat().resolvedOptions().timeZone,screen:screen.width+"x"+screen.height});navigator.sendBeacon("https://reyes-visit-beacon.lampagj.workers.dev/",new Blob([d],{type:"text/plain"}));}catch(e){}})();
 </script>
 HTML
   echo
