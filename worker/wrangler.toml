@@ -2,6 +2,10 @@ name = "reyes-visit-beacon"
 main = "src/index.js"
 compatibility_date = "2026-09-01"
 
+[vars]
+# Comma-separated origins allowed to log visits. Add other projects' sites here.
+ALLOWED_ORIGINS = "https://lampagj.github.io"
+
 [[d1_databases]]
 binding = "DB"
 database_name = "reyes-visits"
