@@ -8,8 +8,8 @@
 - Parloff's live thread, posted from the courthouse media room: [thread root][P1].
 - Roberts' two live threads: [witnesses][R2] and [argument][R193].
 
-**Coverage:** 9:39 a.m. – 4:58 p.m. ET.
-- Parloff: 209 posts. His thread was still live at the last update, with the government's rebuttal under way.
+**Coverage:** 9:39 a.m. – 4:59 p.m. ET.
+- Parloff: 210 posts. His thread was still live at the last update, with the government's rebuttal under way.
 - Roberts: 220 posts, 10:27 a.m. – 3:41 p.m. She joined just after testimony began and signed off during the government's argument.
 
 **How this page was made:** see [How this was compiled](#how-this-was-compiled) at the bottom.
@@ -174,7 +174,8 @@
 - **4:46–4:49** — 👀 **Judge:** "We are where we are. I don't think trees were cut down because of [the] 2019 CLR. No reasonable inference that's the case. None." That "doesn't mean witnesses were lying. Maybe that's what they were told." ***"I plan at this moment to make [a] finding that trees were cut down to effectuate WNP."*** She could still see something that changes her mind. **DOJ:** "At end of day, we have [a] compelling merits argument." [P202] [P203]
 - **4:49–4:52** — **Judge:** if, per NPS testimony, there's no urgency and, per DOJ, no plan to shut the course, what are the equities against a notice requirement and a halt to tree removal? **DOJ:** "We don't want to have another circumstance like we had this week." **Judge:** "Yeah, yeah." **DOJ:** that's the problem with a notice requirement. **Judge:** "No, [the] problem last week was *lack* of [a] notice requirement." [P203] [P204] [P205]
 - **4:52–4:56** — **Judge:** what does she do with the President saying the Interior Secretary is on board? **DOJ:** treat it like an executive order; he doesn't read the post as saying the Secretary signed off on a final plan. Agencies develop detailed plans every day that aren't final until finalized. **Judge:** there's "plenty of caselaw [that] we don't have to wait till it's final final final." She won't "haul the Secy in here right now," but may ask for briefing on whether she can ask DOJ if the Secretary agrees there's a developed plan. **DOJ:** "Don't think it matters." [P205] [P206] [P207] [P208]
-- **4:58** — **Judge:** "I think it does," citing *NRDC v. Wheeler* and *National Automatic Laundry*. **DOJ:** on the equities, there's "a strong separation of powers equity for [the] executive branch managing its own affairs." 👀 ***The Judge clicks her pen dozens of times.*** **Judge:** "Founders had [a] discussion about [the] role of [the] judiciary?" **DOJ:** "Yes." *(Parloff's thread continues past this point.)* [P209]
+- **4:58** — **Judge:** "I think it does," citing *NRDC v. Wheeler* and *National Automatic Laundry*. **DOJ:** on the equities, there's "a strong separation of powers equity for [the] executive branch managing its own affairs." 👀 ***The Judge clicks her pen dozens of times.*** **Judge:** "Founders had [a] discussion about [the] role of [the] judiciary?" **DOJ:** "Yes." [P209]
+- **4:59** — **Judge:** the three coordinate branches should check one another: "ambition checks ambition." **DOJ:** "Agree." **Judge:** at the Constitutional Convention there was discussion of whether courts could act in equity, and they decided courts could. If DOJ's separation-of-powers equity "carried the day, [the] executive would win every time?" *(Parloff's thread continues past this point.)* [P210]
 
 ---
 
