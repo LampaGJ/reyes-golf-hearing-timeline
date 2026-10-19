@@ -1,12 +1,14 @@
 // Visit beacon: the page POSTs a small JSON body; this Worker adds what only the
-// server can see (IP, geo, network) and forwards a summary to Pushover.
-// Secrets live in Cloudflare (`wrangler secret put`): PUSHOVER_TOKEN, PUSHOVER_USER.
+// server can see (IP, geo, network) and stores one row per visit in D1 (binding DB).
+// Read the log with: npx wrangler d1 execute reyes-visits --remote --command "SELECT * FROM visits ORDER BY id DESC LIMIT 20"
 const ALLOWED_ORIGIN = 'https://lampagj.github.io';
 
 const cors = {
   'Access-Control-Allow-Origin': ALLOWED_ORIGIN,
   'Access-Control-Allow-Methods': 'POST, OPTIONS',
 };
+
+const clip = (v, n = 500) => (v == null ? null : String(v).slice(0, n));
 
 export default {
   async fetch(request, env, ctx) {
@@ -17,28 +19,17 @@ export default {
     let page = {};
     try { page = JSON.parse((await request.text()).slice(0, 4000)); } catch { /* keep server-side fields */ }
     const cf = request.cf ?? {};
-    const place = [cf.city, cf.region, cf.country].filter(Boolean).join(', ') || '?';
 
-    const lines = [
-      `IP: ${request.headers.get('CF-Connecting-IP') ?? '?'}`,
-      `Where: ${place}`,
-      `Network: ${cf.asOrganization ?? '?'} (AS${cf.asn ?? '?'})`,
-      `Referrer: ${page.ref || '(none)'}`,
-      `Page: ${page.path ?? '?'}`,
-      `UA: ${request.headers.get('User-Agent') ?? '?'}`,
-      `Lang: ${page.lang ?? '?'}  TZ: ${page.tz ?? '?'}  Screen: ${page.screen ?? '?'}`,
-    ];
+    ctx.waitUntil(env.DB.prepare(
+      `INSERT INTO visits (ip, city, region, country, asn, network, referrer, path, user_agent, lang, tz, screen)
+       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+    ).bind(
+      clip(request.headers.get('CF-Connecting-IP')), clip(cf.city), clip(cf.region), clip(cf.country),
+      cf.asn ?? null, clip(cf.asOrganization),
+      clip(page.ref), clip(page.path), clip(request.headers.get('User-Agent')),
+      clip(page.lang, 50), clip(page.tz, 80), clip(page.screen, 30),
+    ).run());
 
-    ctx.waitUntil(fetch('https://api.pushover.net/1/messages.json', {
-      method: 'POST',
-      body: new URLSearchParams({
-        token: env.PUSHOVER_TOKEN,
-        user: env.PUSHOVER_USER,
-        title: `Visit: Reyes hearing timeline (${cf.country ?? '?'})`,
-        message: lines.join('\n'),
-        url: ALLOWED_ORIGIN + (page.path ?? '/'),
-      }),
-    }));
     return new Response(null, { status: 204, headers: cors });
   },
 };

@@ -6,7 +6,7 @@ cd "$(dirname "$0")"
   printf -- '---\ntitle: East Potomac Golf Course Hearing — Courtroom Timeline\n---\n\n'
   # [P12] -> [P12][] so adjacent citations don't collapse into one kramdown reference link
   perl -pe 's/\[([PR]\d+)\](?![\[:(])/[$1][]/g; s/\]\[([PR]\d+)\]\[\]/][$1]/g' timeline.md
-  # Visit beacon -> Cloudflare Worker (worker/) -> Pushover. No keys in the page.
+  # Visit beacon -> Cloudflare Worker (worker/) -> D1 visit log. Nothing secret in the page.
   cat <<'HTML'
 
 <script>

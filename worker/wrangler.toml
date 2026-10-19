@@ -1,3 +1,8 @@
 name = "reyes-visit-beacon"
 main = "src/index.js"
 compatibility_date = "2026-09-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "reyes-visits"
+database_id = "f4b5cc09-275b-4478-a270-bbaba36576e8"
