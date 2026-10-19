@@ -8,8 +8,8 @@
 - Parloff's live thread, posted from the courthouse media room: [thread root][P1].
 - Roberts' two live threads: [witnesses][R2] and [argument][R193].
 
-**Coverage:** 9:39 a.m. – 5:01 p.m. ET.
-- Parloff: 211 posts. His thread was still live at the last update, with plaintiffs' final rebuttal under way.
+**Coverage:** 9:39 a.m. – 5:06 p.m. ET, through adjournment. This timeline is complete.
+- Parloff: 213 posts, through the Judge's closing words and adjournment.
 - Roberts: 220 posts, 10:27 a.m. – 3:41 p.m. She joined just after testimony began and signed off during the government's argument.
 
 **How this page was made:** see [How this was compiled](#how-this-was-compiled) at the bottom.
@@ -176,7 +176,12 @@
 - **4:52–4:56** — **Judge:** what does she do with the President saying the Interior Secretary is on board? **DOJ:** treat it like an executive order; he doesn't read the post as saying the Secretary signed off on a final plan. Agencies develop detailed plans every day that aren't final until finalized. **Judge:** there's "plenty of caselaw [that] we don't have to wait till it's final final final." She won't "haul the Secy in here right now," but may ask for briefing on whether she can ask DOJ if the Secretary agrees there's a developed plan. **DOJ:** "Don't think it matters." [P205] [P206] [P207] [P208]
 - **4:58** — **Judge:** "I think it does," citing *NRDC v. Wheeler* and *National Automatic Laundry*. **DOJ:** on the equities, there's "a strong separation of powers equity for [the] executive branch managing its own affairs." 👀 ***The Judge clicks her pen dozens of times.*** **Judge:** "Founders had [a] discussion about [the] role of [the] judiciary?" **DOJ:** "Yes." [P209]
 - **4:59** — **Judge:** the three coordinate branches should check one another: "ambition checks ambition." **DOJ:** "Agree." **Judge:** at the Constitutional Convention there was discussion of whether courts could act in equity, and they decided courts could. If DOJ's separation-of-powers equity "carried the day, [the] executive would win every time?" [P210]
-- **5:01** — **DOJ:** "Don't think that's right." **Judge:** "Anything else? Okay, really quickly." **MS (rebuttal):** on standing, the claim challenges the plan, so standing goes to the plan; tree removal is one piece of it. The clients are challenging the decision to destroy their course. *(Parloff's thread continues past this point.)* [P211]
+- **5:01** — **DOJ:** "Don't think that's right." **Judge:** "Anything else? Okay, really quickly." **MS (rebuttal):** on standing, the claim challenges the plan, so standing goes to the plan; tree removal is one piece of it. The clients are challenging the decision to destroy their course. [P211]
+
+## 5 PM — Closing words and adjournment
+
+- **5:03** — **Judge:** "Mr. Woodward." **SW:** "There is no plan to close the course, if those words have their literal meaning." NPS testified today that it isn't closing; the President "would like it closed." **Judge:** "He's not saying he'd like it closed…" Then: "Okay, you guys work out briefing." [P212]
+- **5:06** — 👀 **Judge:** during the break she got "a number of texts… from my mother and my brother because CNN is reporting I'm getting a lot of death threats. This is where we are. A federal judge getting death threats over a golf course. I really don't think this is what the Founders envisioned." 👀 **Adjourned.** [P213]
 
 ---
 
@@ -193,9 +198,10 @@
 ## How this was compiled
 
 - **Source collection:** every post was pulled from Bluesky's public API on Oct 19, 2026. Bluesky's thread view stopped early, after 11 posts, so both reporters' full post histories for the day were fetched instead.
-  - Parloff: kept only posts in his hearing thread (188).
+  - Parloff: kept only posts in his hearing thread (213).
   - Roberts: kept everything she posted between 9:41 a.m. and 3:41 p.m. ET (220), covering her two hearing threads plus her opening pointer to Parloff.
 - **Timestamps:** converted from UTC to Eastern Daylight Time (UTC−4). Entries are grouped by the hour the posts were published.
+- **Live updates:** from about 4:20 p.m. until adjournment, a script checked both feeds every minute. New posts were merged in batches, and the page was republished each time.
 - **Merging:** where both reporters covered the same exchange, their posts are combined into one entry citing both. Each entry gives the fullest wording either reporter captured. Details only one reporter caught are added and attributed: many of the 👀 moments, plus quips like "A good walk ruined" and "heated agreement."
 - **Conflicts:** where the accounts differ, both versions are shown with an *(ed.)* note: the "noon tomorrow" deadline, the Reflecting Pool vs. Grand Prix crew, and name spellings.
 - **Cleanup:**
