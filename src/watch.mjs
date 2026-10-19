@@ -33,8 +33,12 @@ for (let i = 1; i <= total; i++) {
   const pc = count('parloff'), rc = count('roberts');
   p.tick(i, { parloff: pc, roberts: rc });
   if (pc > pBase || rc > rBase) {
-    p.done({ parloff: pc, roberts: rc, reason: 'new posts' });
-    console.log(`NEW parloff=${pc} (was ${pBase}) roberts=${rc} (was ${rBase})`);
+    // Let a burst of live posts settle so one update batches them.
+    await new Promise((r) => setTimeout(r, 120_000));
+    try { execFileSync(join(dir, 'fetch.sh'), { stdio: 'pipe' }); } catch { /* keep the counts we have */ }
+    const pc2 = count('parloff'), rc2 = count('roberts');
+    p.done({ parloff: pc2, roberts: rc2, reason: 'new posts' });
+    console.log(`NEW parloff=${pc2} (was ${pBase}) roberts=${rc2} (was ${rBase})`);
     process.exit(0);
   }
 }
